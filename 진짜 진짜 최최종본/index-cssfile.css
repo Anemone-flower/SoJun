@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+
+@font-face {
+  font-family: 'InkLipquid';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: fadein 1s;
+  }
+
+  .container{
+    width: 100%;
+    height: 300vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .container .header{
+    font-family: 'InkLipquid';
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container .header h2 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'InkLipquid';
+    font-size: 32px;
+  }
+
+  .container .header h2 a:hover {
+    text-decoration: none;
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'InkLipquid';
+  }
+  
+  .container .nav ul li{
+    display: inline-block;
+    margin: 0 10px; 
+  }
+
+  .container .nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'InkLipquid';
+  }
+  
+  .container .nav ul li a:hover{
+    text-decoration: none;
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  .container .hero{ 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'InkLipquid';
+  } 
+
+  .container .hero button{
+    font-family: 'InkLipquid';
+    font-size: 32px;
+    text-align: center;
+    background: none;
+    border : 3px solid lightblue;
+    color: white;
+    padding: 15px 75px;
+    border-radius: 30px;
+    margin-top: 35px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+  }
+  
+  .container .hero button:hover{
+    font-family: 'InkLipquid';
+    background-image: linear-gradient(90deg,#30cfd0 0%, #330867 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  #mainlogo{
+    font-size: 100px;
+    font-family: 'InkLipquid';
+    background-image: linear-gradient(90deg,#30cfd0 0%, #330867 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  @keyframes fadeing {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+body{
+    overflow: hidden;
+}
+
+section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;  
+}
+
+span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+    background-clip: text;
+    color : transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
+    animation: animate 3s linear infinite;
+}
+span::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+span:nth-child(1){
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+span:nth-child(2){
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+span:nth-child(3){
+    top: 80;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+span:nth-child(4){
+    top: 0;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+span:nth-child(5){
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+span:nth-child(6){
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+span:nth-child(7){
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+span:nth-child(8){
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+span:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+span:nth-child(9){
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.75s;
+}
